@@ -1866,3 +1866,9 @@ unset f
 addcompletions
 
 export ANDROID_BUILD_TOP=$(gettop)
+export ARM_EABI_TOOLCHAIN=
+case $ARCH in
+    arm) toolchaindir=linaro/bin
+        ;;
+    *)
+esca
